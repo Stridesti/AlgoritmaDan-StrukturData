@@ -24,7 +24,7 @@ Queue(Run)
 
     1. Nilai awal atribut front dan rear pada konstruktor struktur data antrian (queue) biasanya diatur ke -1 untuk menandakan bahwa antrian masih kosong dan belum ada elemen yang dimasukkan. Dengan nilai -1, kita dapat dengan mudah memeriksa status antrian: jika front == -1 dan rear == -1, maka antrian benar-benar kosong. Sementara itu, atribut size diinisialisasi dengan nilai 0 karena pada saat objek antrian baru dibuat, belum ada elemen yang masuk ke dalam antrian, sehingga jumlah elemen (size) memang 0.
 
-    
+
     2. Kode ini memeriksa apakah pointer rear sudah berada di indeks terakhir array (yaitu max - 1). Jika iya, maka rear di-set kembali ke 0, yaitu ke posisi awal array. Potongan kode tersebut digunakan pada circular queue untuk membuat pointer rear kembali ke posisi 0 saat sudah mencapai indeks terakhir array, sehingga antrian bisa memanfaatkan ruang kosong di awal array dan tidak membuang-buang memori
 
 
@@ -36,14 +36,13 @@ Queue(Run)
 
     5. Potongan kode tersebut sering digunakan dalam struktur data antrian melingkar (circular queue) atau saat ingin melakukan iterasi berulang pada array dengan jumlah elemen tetap. i ialah sebuah variabel indeks (misal: posisi saat ini di array). max yaitu batas maksimum (biasanya panjang array atau kapasitas antrian). (i + 1) berarti indeks saat ini ditambah satu (maju satu langkah). % max adalah operasi modulus, yang akan membatasi hasilnya dari 0 sampai max-1. dan dengan menambah nilai i satu per satu. Jika i sudah mencapai max-1, maka (i + 1) % max akan kembali ke 0 Dengan kata lain, indeks akan berputar kembali ke awal jika sudah sampai ujung. Jadi maksud potongan kode i = (i + 1) % max tersebut  digunakan untuk mengiterasi indeks secara melingkar (circular), sehingga setelah mencapai indeks terakhir, akan kembali ke indeks pertama.
 
-    
     6. Potongan kode program yang merupakan queue overflow!
 
         ![Ss](Overflow.png)
         ---
 
 
-    7. 
+    7.
 
 
 
@@ -103,5 +102,5 @@ Hasil Running
 ---
 ![Ss](<Menu 10 dan 11.png>)
 ---
-![Ss](<0 (Keluar).png>)
+![Ss](<0 (Keluar)-1.png>)
 ---
